@@ -1,0 +1,237 @@
+:root{
+    --common:#b4f8b5;
+    --bg:#1A1237;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1A1237;
+    padding-bottom: 10px;
+}
+.nav_0{
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    padding: 2.5%;
+    box-shadow: 0px 4px 5px 0px #2F206A;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.s_tx{
+    color: #b4f8b5;
+    font-size: 20px;
+}
+.controller{
+    margin-top: 10px;
+}
+.ctrl{
+    margin-top: 1.5%;
+}
+/* 
+    Custom range input- 
+   -https://www.cssportal.com/style-input-range/
+*/
+input[type=range] {
+    -webkit-appearance: none;
+    width: 60%;
+    background-color: transparent;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #002200;
+    background: rgb(177, 175, 175);
+    border-radius: 1px;
+    border: 5px solid transparent;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 3px 3px 3px #1A1237 ;
+    border: 2px solid #b4f8b5;
+    height: 17px;
+    width: 22px;
+    border-radius: 23px;
+    background: rgb(177, 175, 175);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -9px;
+  }
+  
+ .logo{
+     color: #b4f8b5;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 14px;
+ }
+  
+ /* responsive nav */
+ @media screen and (max-width:900px) {
+    .nav_0{
+        grid-template-columns: 100%;
+    }
+    .logo{
+        margin-top: 20px;
+    }
+    input[type=range] {
+        -webkit-appearance: none;
+        width: 35%;
+        background-color: transparent;
+      }
+      .logo{
+          font-size: 12px;
+      }
+      
+ }
+ /* main body */
+ .main_sec_0{
+    display: grid;
+    grid-template-columns:20% 80%;
+ }
+ .main_left{
+   height: 87vh;
+   background-color: transparent;
+   box-shadow: 3px 0px 10px 0px #2F206A;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom-style: none;
+   padding-left: 20px;
+   padding-right: 20px;
+
+ }
+ 
+ 
+ .algo_list ul{
+    list-style: none;
+    width: 20vw;
+    
+ }
+ .algo_list ul li{
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+ }
+.btn{
+    width: 100%;
+   color: #b4f8b5;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   background-color: transparent;
+   font-family: 'Roboto', sans-serif;
+   font-size: 13px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   border: none;
+   border-radius: 10px 10px 2px 2px;
+   box-shadow: 0px 8px 15px rgba(247, 230, 230, 0.1);
+   transition: all 0.3s ease 0s;
+   cursor: pointer;
+   outline: none;
+   text-decoration: none;
+}
+.algo_list ul li .btn:hover{
+        background-color: rgb(177, 175, 175);
+        box-shadow: 0px 15px 20px rgba(108, 233, 183, 0.4);
+        color: #fff;
+        transform: translateY(-9px)
+}
+.algo_list ul li .btn:focus {
+    background-color: rgb(177, 175, 175);
+}
+
+ .main_right{
+  
+ }
+ .responsive_list{
+     display: none;
+ }
+ 
+ @media screen and (max-width:900px) {
+    .main_sec_0{
+        grid-template-columns: 100%;
+    }
+    .main_left{
+        height: auto;
+    }
+    .algo_list{
+        margin-top:6%;
+    }
+    .algo_list ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row !important;
+    }
+    .algo_list ul li{
+        margin-top: 0px;
+    }
+    /* .main_sec_0{
+        display: grid;
+        grid-template-columns:20% 80%;
+     } */
+     .main_left{
+         display: none;
+     }
+     .responsive_list{
+        display: block;
+    }
+ }
+  
+ @media screen and (max-width:460px) {
+    .algo_list{
+        margin-top:13%;
+    }
+    .btn{
+        font-size: 11px;
+    }
+    input[type=range] {
+        width: 70%;
+    }
+    .logo{
+        font-size: 10px;
+    }
+    .s_tx{
+        font-size: 16px;
+    }
+}
+.responsive_list{
+    margin-top: 10px;
+}
+.responsive_list select{
+    width: 30%;
+    height: 35px;
+    border-width: 1px;
+    border-color: teal;
+    -webkit-box-shadow: 1px 3px 5px #666;
+    -moz-box-shadow: 5px 5px 5px #666;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 10px;
+    color: var(--common);
+    background-color: transparent;
+    outline: none;
+    text-transform: uppercase;
+}
+.responsive_list select option{
+    color: #b4f8b5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: var(--bg);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+@media screen and (max-width:460px) {
+    .responsive_list select{
+        width: 60%;
+        }
+}
+@media screen and (max-width:300px) {
+    .responsive_list select{
+        width: 90%;
+        }
+}

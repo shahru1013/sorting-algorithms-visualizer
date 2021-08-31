@@ -1,0 +1,28 @@
+.items-0{
+    margin-top: 10px;
+    transform: rotate(180deg);
+    border-top-style: solid;
+    border-top-color: rgb(177, 175, 175);
+    border-top-width: 5px;
+    margin-top: 5%;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.items .rod{
+    background-color: #b4f8b5;
+    margin-left: 1px;
+}
+.title{
+    color: tomato;
+    font-size: 25px;
+}
+
+@media screen and (max-width:900px) {
+    .title{
+        font-size: 18px;
+    }
+}
